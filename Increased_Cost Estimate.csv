@@ -1,0 +1,34 @@
+﻿Estimate summary,,,,,,,,,
+Upfront cost,Monthly cost,Total 12 months cost,Currency,,,,,,
+0,18438.7,221264.4,USD,,,,,,
+,,* Includes upfront cost,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+Detailed Estimate,,,,,,,,,
+Group hierarchy,Region,Description,Service,Upfront,Monthly,First 12 months total,Currency,Status,Configuration summary
+Increased_Cost Estimate,US East (N. Virginia),,Amazon Route 53,0,1227.5,14730,USD,,"Hosted Zones (1), Basic Checks Within AWS (1000)"
+Increased_Cost Estimate,US East (N. Virginia),CloudFront,Amazon CloudFront,0,1,12,USD,,Number of requests (HTTPS) (1000000 per month)
+Increased_Cost Estimate,US East (N. Virginia),,S3 Standard,0,122.76,1473.12,USD,,"S3 Standard storage (5 TB per month), PUT, COPY, POST, LIST requests to S3 Standard (1000000)"
+Increased_Cost Estimate,US East (N. Virginia),,Data Transfer,0,0,0,USD,,
+Increased_Cost Estimate,US East (N. Virginia),API Gateway,Amazon API Gateway,0,45,540,USD,,"REST API request units (millions), Cache memory size (GB) (None), WebSocket message units (thousands), HTTP API requests units (millions), Average size of each request (34 KB), Average message size (32 KB), Requests (10 per month), Requests (10 per month)"
+Increased_Cost Estimate,US East (N. Virginia),Elastic IP,Amazon Elastic IP,0,0,0,USD,,"Number of EC2 instances (8), Number of EIPs per instance (1)"
+Increased_Cost Estimate,US East (N. Virginia),Load Balancing,Application Load Balancer,0,149.65,1795.8,USD,,Number of Application Load Balancers (2)
+Increased_Cost Estimate,US East (N. Virginia),Load Balancing,Network Load Balancer,0,908.85,10906.2,USD,,"Number of Network Load Balancers (2), Processed bytes per NLB for TCP (100 GB per hour), Average number of new TCP connections (5 per second)"
+Increased_Cost Estimate,US East (N. Virginia),EC2,Amazon EC2 ,0,4793.136,57517.63,USD,,"Tenancy (Dedicated Instances), Operating system (Linux), Workload (Consistent, Number of instances: 16), Advance EC2 instance (t3.2xlarge), Pricing strategy (On-Demand Utilization: 100 %Utilized/Month), Enable monitoring (enabled), EBS Storage amount (500 GB), DT Inbound: Internet (10 TB per month), DT Outbound: Not selected (0 TB per month), DT Intra-Region: (0 TB per month)"
+Increased_Cost Estimate,US East (N. Virginia),RDS,Amazon RDS for PostgreSQL,0,9092.7052,109112.46,USD,,"Storage volume (General Purpose SSD (gp2)), Storage amount (15 TB), Nodes (2), Instance Type (db.m5.large), Utilization (On-Demand only) (100 %Utilized/Month), Deployment Option (Multi-AZ), Pricing Model (OnDemand), Additional backup storage (15 TB), Total Size of Backup Processed for Export (GB) (100 per week)"
+Increased_Cost Estimate,US East (N. Virginia),VPC,Network Address Translation (NAT) Gateway,0,526.5,6318,USD,,Number of NAT Gateways (2)
+Increased_Cost Estimate,US East (N. Virginia),CloudWatch,Amazon CloudWatch,0,1571.593,18859.12,USD,,"Number of Metrics (includes detailed and custom metrics) (5000), Standard Logs: Data Ingested (1 GB), Logs Delivered to CloudWatch Logs: Data Ingested (1 GB), Logs Delivered to S3: Data Ingested (1 GB), Number of Dashboards (10), Number of Standard Resolution Alarm Metrics (10), Number of High Resolution Alarm Metrics (10), Number of composite alarms (10), Number of alarms defined with a Metrics Insights query (10), Average number of metrics scanned by each Metrics Insights query (10), Number of Contributor Insights rules for CloudWatch (10), Total number of matched log events for CloudWatch (1000 million matched log events per month), Number of Contributor Insights rules for DynamoDB (10), Total number of events for DynamoDB (10 million events per month), Number of Lambda functions (), GetMetricData: Number of metrics requested (100), GetMetricWidgetImage: Number of metrics requested (100), Number of other API requests (100)"
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+Acknowledgement,,,,,,,,,
+"* AWS Pricing Calculator provides only an estimate of your AWS fees and doesn't include any taxes that might apply. Your actual fees depend on a variety of factors, including your actual usage of AWS services.",,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+Changes made:,,,,,,,,,
+Amazon Route 53,Increase Checks for better monitoring,,,,,,,,
+Network Load Balancer,Added for beter performance,,,,,,,,
+EC2,"Increase 4 instances, enable monitoring",,,,,,,,
+RDS for PostgreSQL,"Increase storage amount, backup storage, Total Size of Backup Processed for Export (GB) (100 per week)",,,,,,,,
+Amazon CloudWatch,Added for monitoring,,,,,,,,

@@ -1,0 +1,23 @@
+﻿Estimate summary,,,,,,,,,
+Upfront cost,Monthly cost,Total 12 months cost,Currency,,,,,,
+0,8503.22,102038.64,USD,,,,,,
+,,* Includes upfront cost,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+Detailed Estimate,,,,,,,,,
+Group hierarchy,Region,Description,Service,Upfront,Monthly,First 12 months total,Currency,Status,Configuration summary
+Initial_Cost_Estimate,US East (N. Virginia),CloudFront,Amazon CloudFront,0,1,12,USD,,Number of requests (HTTPS) (1000000 per month)
+Initial_Cost_Estimate,US East (N. Virginia),Rout3 53,Amazon Route 53,0,127.5,1530,USD,,"Hosted Zones (1), Basic Checks Within AWS (300)"
+Initial_Cost_Estimate,US East (N. Virginia),S3,S3 Standard,0,122.76,1473.12,USD,,"S3 Standard storage (5 TB per month), PUT, COPY, POST, LIST requests to S3 Standard (1000000)"
+Initial_Cost_Estimate,US East (N. Virginia),S3,Data Transfer,0,0,0,USD,,
+Initial_Cost_Estimate,US East (N. Virginia),API Gateway,Amazon API Gateway,0,45,540,USD,,"REST API request units (millions), Cache memory size (GB) (None), WebSocket message units (thousands), HTTP API requests units (millions), Average size of each request (34 KB), Requests (10 per month), Average message size (32 KB), Requests (10 per month)"
+Initial_Cost_Estimate,US East (N. Virginia),Elastic IP,Amazon Elastic IP,0,0,0,USD,,"Number of EC2 instances (8), Number of EIPs per instance (1)"
+Initial_Cost_Estimate,US East (N. Virginia),Load Balancing,Application Load Balancer,0,149.65,1795.8,USD,,Number of Application Load Balancers (2)
+Initial_Cost_Estimate,US East (N. Virginia),EC2,Amazon EC2 ,0,3461.66,41539.92,USD,,"Tenancy (Dedicated Instances), Operating system (Linux), Workload (Consistent, Number of instances: 12), Advance EC2 instance (t3.2xlarge), Pricing strategy ( On-Demand Utilization: 100 %Utilized/Month), Enable monitoring (disabled), DT Inbound: Internet (10 TB per month), DT Outbound: Not selected (0 TB per month), DT Intra-Region: (0 TB per month)"
+Initial_Cost_Estimate,US East (N. Virginia),RDS,Amazon RDS for PostgreSQL,0,4332.4,51988.8,USD,,"Storage volume (General Purpose SSD (gp2)), Storage amount (8 TB), Nodes (2), Instance Type (db.m5.large), Utilization (On-Demand only) (100 %Utilized/Month), Deployment Option (Multi-AZ), Pricing Model (OnDemand)"
+Initial_Cost_Estimate,US East (N. Virginia),VPC,Network Address Translation (NAT) Gateway,0,263.25,3159,USD,,Number of NAT Gateways (1)
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+Acknowledgement,,,,,,,,,
+"* AWS Pricing Calculator provides only an estimate of your AWS fees and doesn't include any taxes that might apply. Your actual fees depend on a variety of factors, including your actual usage of AWS services.",,,,,,,,,
